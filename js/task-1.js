@@ -1,7 +1,8 @@
 const logItems = function (array) {
+  let itemNumber = 1;
   for (const item of array) {
-    const itemNo = array.indexOf(item) + 1;
-    console.log(`${itemNo} - ${item}`);
+    console.log(`${itemNumber} - ${item}`);
+    itemNumber += 1;
   }
 };
 

@@ -1,8 +1,8 @@
 const checkForSpam = function (message) {
-  const lowerMessage = message.toLowerCase();
-  const banWord1 = "spam";
-  const banword2 = "sale";
-  return lowerMessage.includes(banWord1) || lowerMessage.includes(banword2);
+  return (
+    message.toLowerCase().includes("spam") ||
+    message.toLowerCase().includes("sale")
+  );
 };
 
 /*

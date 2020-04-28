@@ -1,6 +1,8 @@
 const formatString = function (string) {
-  const shortString = string.slice(0, 40);
-  return string.length < 40 ? string : `${shortString}...`;
+  const maxLength = 40;
+  return string.length < maxLength
+    ? string
+    : `${string.slice(0, maxLength - 1)}...`;
 };
 
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
