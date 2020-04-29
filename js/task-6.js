@@ -25,4 +25,6 @@ const sum = function (arr) {
   return `Общая сумма чисел равна ${total}`;
 };
 
-console.log(sum(numbers));
+if (numbers.length !== 0) {
+  console.log(sum(numbers));
+}
